@@ -1,0 +1,28 @@
+$color-bg: white;
+
+.container {
+  padding: 1rem;
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-header {
+    &-text {
+      font-size: 2rem;
+    }
+  }
+
+  &-body {
+    &-row {
+      display: flex;
+
+      &-icon {
+        padding: 0.5rem;
+      }
+
+      &-url {
+        padding: 0.5rem;
+      }
+    }
+  }
+}

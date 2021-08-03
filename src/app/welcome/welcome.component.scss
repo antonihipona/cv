@@ -1,0 +1,50 @@
+$color-bg: beige;
+
+.container {
+  background-color: $color-bg;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 10vh;
+  height: calc(90vh - 1rem);
+  &-image {
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+    width: 30vh;
+    height: 30vh;
+    animation: fade-in 1s ease-out;
+    &-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-welcome {
+    animation: fade-in 1s ease-out;
+    &-text {
+      line-height: 90%;
+      font-size: 8rem;
+      @media screen and(max-width: 800px) {
+        font-size: 6rem;
+      }
+    }
+  }
+  &-buttons {
+    display: flex;
+    padding-top: 0.5rem;
+    &-button {
+      padding: 0.5rem;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

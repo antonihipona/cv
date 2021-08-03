@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="container-image">
+    <img class="container-image-img" src="assets/images/yo.jpg">
+  </div>
+  <div class="container-welcome" (animationend)="animationEnded($event)">
+    <span class="container-welcome-text">
+      Hola
+    </span>
+  </div>
+  <div class="container-buttons" [ngClass]="{show: showButtons}">
+    <app-welcome-button class="container-buttons-button" text="Sobre mí" (click)="scrollTo('aboutMe')">
+    </app-welcome-button>
+    <app-welcome-button class="container-buttons-button" text="Carrera" (click)="scrollTo('career')">
+    </app-welcome-button>
+    <app-welcome-button class="container-buttons-button" text="Contacto" (click)="scrollTo('contactMe')">
+    </app-welcome-button>
+  </div>
+</div>
+<app-about-me id='aboutMe'></app-about-me>
+<app-career id='career'></app-career>
+<app-contact-me id='contactMe'></app-contact-me>

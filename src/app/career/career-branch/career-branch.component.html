@@ -1,0 +1,8 @@
+<div class="container" *ngIf="year && title">
+  <div #yearRef class="container-year" [ngClass]="{right: right, left: !right, professional: professional}" (transitionend)="showTitle($event)">
+    {{year}}
+  </div>
+  <div #titleRef class="container-title" [ngClass]="{right: right, left: !right}">
+    {{title}}
+  </div>
+</div>

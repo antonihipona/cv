@@ -1,0 +1,27 @@
+$color-bg: white;
+
+.container {
+  padding: 1rem;
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-header {
+    &-text {
+      font-size: 2rem;
+    }
+  }
+
+  &-body {
+    text-align: center;
+    width: 50%;
+
+    @media screen and(max-width: 1000px) {
+      width: 80%;
+    }
+
+    @media screen and(max-width: 800px) {
+      width: 100%;
+    }
+  }
+}

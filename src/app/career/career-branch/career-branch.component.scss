@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  height: 100%;
+  &-year {
+    position: absolute;
+    text-align: center;
+    transition: all 1s;
+    width: 0;
+    opacity: 0;
+    background-color: blueviolet;
+    overflow: hidden;
+    color: white;
+    white-space: nowrap;
+    &.right {
+      right: 0;
+    }
+
+    &.left {
+      left: 0;
+    }
+    
+    &.professional { 
+      background-color: goldenrod;
+    }
+  }
+  &-title {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+    width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    &.right {
+      padding-left: 10%;
+    }
+
+    &.left {
+      padding-right: 10%;
+    }
+  }
+}
+
+.show-year {
+  opacity: 1;
+  width: 40vw;
+}
+
+.show-title {
+  opacity: 1;
+}

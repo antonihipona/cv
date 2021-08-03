@@ -1,0 +1,39 @@
+$color-bg: white;
+
+.container {
+  padding: 1rem;
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  &-header {
+    text-align: center;
+    &-text {
+      font-size: 2rem;
+    }
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    &-column {
+      display: flex;
+      flex-direction: column;
+      &.left {
+        justify-content: flex-end;
+      }
+      &.right {
+        justify-content: flex-start;
+      }
+      width: calc(50% - 1rem);
+      &-branch {
+        margin: 10rem 0;
+      }
+    }
+
+    &-middle {
+      width: 2rem;
+      background-color: crimson;
+    }
+  }
+}
