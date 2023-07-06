@@ -30,7 +30,7 @@ $color-hover: rgb(241, 241, 160);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 
   &-text {
-    @media screen and(max-width: 800px) {
+    @media screen and (max-width: 800px) {
       font-size: 1rem;
     }
   }

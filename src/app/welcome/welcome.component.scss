@@ -26,7 +26,7 @@ $color-bg: beige;
     &-text {
       line-height: 90%;
       font-size: 8rem;
-      @media screen and(max-width: 800px) {
+      @media screen and (max-width: 800px) {
         font-size: 6rem;
       }
     }
